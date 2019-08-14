@@ -180,7 +180,7 @@ body {
 .main {
   font-size: 0.8rem;
   background-color: white;
-  height: 450px;
+  height: 250px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -196,9 +196,13 @@ body {
   border-bottom: 2px solid lightseagreen;
   padding: 1rem;
 }
+.skills {
+  height: 250px;
+  padding-left: 2rem;
+}
 .work-history {
   background-color: teal;
-  height: 550px;
+  height: 250px;
 }
 table {
   width: 100%;
@@ -206,4 +210,9 @@ table {
 td,
 th {
   border: 1px solid black;
+  text-align: center;
+}
+th {
+  font-weight: bold;
+  background: lightgrey;
 }

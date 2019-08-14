@@ -62,8 +62,9 @@ html, body {
 @mainColour: white;
 @workHistoryColour: teal;
 @topHeight: 200px;
-@mainHeight: 450px;
-@bottomHeight: 550px;
+@mainHeight: 250px;
+@skillsHeight: 250px;
+@bottomHeight: 250px;
 @mainWidth: 80%;
 @desktopRootFontSize: 100%;
 @mobileFontSize: 150%;
@@ -153,6 +154,11 @@ html, body {
 	padding: 1rem;
 }
 
+.skills {
+	height: @skillsHeight;
+	padding-left: 2rem;
+}
+
 
 .work-history {
 	background-color: @workHistoryColour;
@@ -166,4 +172,10 @@ table {
 
 td, th {
 	border: 1px solid black;
+	text-align: center;
+}
+
+th {
+	font-weight: bold;
+	background: lightgrey;
 }
