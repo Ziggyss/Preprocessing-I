@@ -68,10 +68,10 @@ html, body {
 @desktopRootFontSize: 100%;
 @mobileFontSize: 150%;
 
-.flexDefault() {
+.navFlex() {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: flex-end;
 }
 
 
@@ -85,14 +85,20 @@ html, body {
 	display: flex;
 	flex-direction: column;
 	align-items: space-between;
+	justify-content: flex-end;
+	
+	
 
 	.navbar {
-		.flexDefault();
+		.navFlex();
+		padding-bottom: 1rem;
 		 a {
 			 text-decoration: none;
 			 color: teal;
-			 
-		 }
+			 padding-left: 2rem;
+			 padding-right: 1rem;
+			 }
+
 	}
 }
 .name {
@@ -100,8 +106,10 @@ html, body {
 		font-size: 4rem;
 	}
 	h4 {
-	font-size: 2rem;
-    } 
+	font-size: 1.6rem;
+	} 
+	padding-bottom: 1rem;
+	padding-left: 4rem;
 }
 
 .main {
