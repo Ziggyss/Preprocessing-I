@@ -4,6 +4,7 @@
    License: none (public domain)
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -57,8 +58,8 @@ html, body {
 	height: 100%;
 	font-family: @fontFamily;
 }
-
-@headerColour: LavenderBlush;
+@fa-font-path: "../fonts";
+@headerColour: Linen;
 @mainColour: white;
 @workHistoryColour: teal;
 @topHeight: 200px;
@@ -103,6 +104,14 @@ html, body {
 	flex-direction: column;
 	align-items: space-between;
 	justify-content: flex-end;
+	@media(max-width: @mobileWidth){
+		height: 350px;
+		.name {
+			padding-left: 0;
+		}
+		
+		}
+	}
 	
 	.navbar {
 		.navFlex();
@@ -112,13 +121,26 @@ html, body {
 			 color: teal;
 			 padding-left: 2rem;
 			 padding-right: 1rem;
-		 		 
-		 @media(max-width: @mobileWidth){
-			 .mobileFlex();
-			}	
-		 }	 
+			 @media(max-width: @mobileWidth){
+				 padding-top: 1rem;
+				 padding-bottom: 1rem;
+				 border-bottom: 1px solid grey;
+				 width: 100%;
+				 text-align: center;
+				#Home {
+					border-top: 1px solid grey;
+				} 
+			 }
+		 }
+		 
+		@media(max-width: @mobileWidth){
+			.mobileFlex();
+		}
+			 
+		
+		 
 	}
-}
+
 
 .name {
 	h1 {
@@ -156,13 +178,38 @@ html, body {
 
 .skills {
 	height: @skillsHeight;
-	padding-left: 2rem;
+	border: solid black 1px;
+}
+
+.skillsIcons {
+	.mainFlex();
+}
+
+.photoSection {
+	.mainFlex();
+}
+.photoBox {
+	width: 25%;
+	height: 150px;
+	background-color: lightblue;
+	border: solid 2px lightseagreen;
+	img {
+		width: 100%;
+		height: 100%;
+	}
 }
 
 
 .work-history {
 	background-color: @workHistoryColour;
 	height: @bottomHeight;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	h4 {
+		font-size: 1.6rem;
+	}
+	max-width: @mainWidth;
+	margin: 0 auto;
 }
 
 table {
@@ -173,6 +220,7 @@ table {
 td, th {
 	border: 1px solid black;
 	text-align: center;
+	height: 1.5rem;
 }
 
 th {

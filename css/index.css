@@ -140,27 +140,47 @@ body {
   margin: 0 auto;
 }
 .top {
-  background-color: LavenderBlush;
+  background-color: Linen;
   height: 200px;
   display: flex;
   flex-direction: column;
   align-items: space-between;
   justify-content: flex-end;
 }
-.top .navbar {
+@media (max-width: 500px) {
+  .top {
+    height: 350px;
+  }
+  .top .name {
+    padding-left: 0;
+  }
+}
+.navbar {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-bottom: 1rem;
 }
-.top .navbar a {
+.navbar a {
   text-decoration: none;
   color: teal;
   padding-left: 2rem;
   padding-right: 1rem;
 }
 @media (max-width: 500px) {
-  .top .navbar a {
+  .navbar a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar a #Home {
+    border-top: 1px solid grey;
+  }
+}
+@media (max-width: 500px) {
+  .navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,11 +218,38 @@ body {
 }
 .skills {
   height: 250px;
-  padding-left: 2rem;
+  border: solid black 1px;
+}
+.skillsIcons {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.photoSection {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.photoBox {
+  width: 25%;
+  height: 150px;
+  background-color: lightblue;
+  border: solid 2px lightseagreen;
+}
+.photoBox img {
+  width: 100%;
+  height: 100%;
 }
 .work-history {
   background-color: teal;
   height: 250px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.work-history h4 {
+  font-size: 1.6rem;
 }
 table {
   width: 100%;
@@ -211,6 +258,7 @@ td,
 th {
   border: 1px solid black;
   text-align: center;
+  height: 1.5rem;
 }
 th {
   font-weight: bold;
