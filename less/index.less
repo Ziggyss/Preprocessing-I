@@ -63,13 +63,17 @@ html, body {
 @topHeight: 200px;
 @mainHeight: 450px;
 @bottomHeight: 550px;
+@mainWidth: 800px;
 .flexDefault() {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
 
-
+.container {
+	width: @mainWidth;
+	margin: 0 auto;
+}
 .top {
 	background-color: @headerColour;
 	height: @topHeight;

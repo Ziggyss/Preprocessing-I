@@ -134,6 +134,10 @@ html,
 body {
   height: 100%;
 }
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
 .top {
   background-color: lightgray;
   height: 200px;
