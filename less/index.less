@@ -58,7 +58,7 @@ html, body {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@headerColour: lightgray;
+@headerColour: LavenderBlush;
 @mainColour: white;
 @workHistoryColour: teal;
 @topHeight: 200px;
@@ -72,6 +72,12 @@ html, body {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+}
+
+.mainFlex() {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
 }
 
 
@@ -113,9 +119,26 @@ html, body {
 }
 
 .main {
+	font-size: 0.8rem;
 	background-color: @mainColour;
 	height: @mainHeight;
+	h4 {
+		font-size: 1.4rem;
+	}
+	.mainFlex();
+	padding-top: 3rem;
+	padding-left: 2rem;
+
 }
+
+
+.intro {
+	width: 55%;
+	border-top: 2px solid lightseagreen;
+	border-bottom: 2px solid lightseagreen;
+	padding: 1rem;
+}
+
 
 .work-history {
 	background-color: @workHistoryColour;

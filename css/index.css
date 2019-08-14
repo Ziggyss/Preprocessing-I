@@ -140,7 +140,7 @@ body {
   margin: 0 auto;
 }
 .top {
-  background-color: lightgray;
+  background-color: LavenderBlush;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -170,8 +170,23 @@ body {
   font-size: 1.6rem;
 }
 .main {
+  font-size: 0.8rem;
   background-color: white;
   height: 450px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+.main h4 {
+  font-size: 1.4rem;
+}
+.intro {
+  width: 55%;
+  border-top: 2px solid lightseagreen;
+  border-bottom: 2px solid lightseagreen;
+  padding: 1rem;
 }
 .work-history {
   background-color: teal;
