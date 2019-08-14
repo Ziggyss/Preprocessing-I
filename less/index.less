@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: @desktopRootFontSize;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -55,7 +55,7 @@ table {
 
 html, body {
 	height: 100%;
-	font-family: 'Courier New', Courier, monospace;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 @headerColour: lightgray;
@@ -88,7 +88,11 @@ html, body {
 
 	.navbar {
 		.flexDefault();
-		text-decoration: none;
+		 a {
+			 text-decoration: none;
+			 color: teal;
+			 
+		 }
 	}
 }
 .name {
@@ -97,6 +101,7 @@ html, body {
 	}
 	h4 {
 	font-size: 2rem;
+    } 
 }
 
 .main {
@@ -108,3 +113,6 @@ html, body {
 	background-color: @workHistoryColour;
 	height: @bottomHeight;
 }
+
+
+
