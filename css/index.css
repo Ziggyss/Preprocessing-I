@@ -138,6 +138,8 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 .top {
   background-color: Linen;
@@ -185,6 +187,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    font-size: 150%;
   }
 }
 .name {
@@ -198,7 +201,7 @@ body {
   font-size: 1.6rem;
 }
 .main {
-  font-size: 0.8rem;
+  font-size: 1rem;
   background-color: white;
   height: 250px;
   display: flex;
@@ -208,7 +211,31 @@ body {
   padding-left: 2rem;
 }
 .main h4 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 700px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .main {
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .main .intro {
+    width: 100%;
+  }
 }
 .intro {
   width: 55%;
@@ -220,33 +247,43 @@ body {
   height: 250px;
   border: solid black 1px;
 }
-.skillsIcons {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+@media (max-width: 500px) {
+  .skills {
+    border: solid white 1px;
+  }
 }
 .photoSection {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .photoSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
 .photoBox {
   width: 25%;
   height: 150px;
-  background-color: lightblue;
   border: solid 2px lightseagreen;
 }
 .photoBox img {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .photoBox {
+    width: 100%;
+    height: auto;
+  }
+}
 .work-history {
-  background-color: teal;
+  background-color: lightseagreen;
   height: 250px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  max-width: 80%;
-  margin: 0 auto;
+  width: 100%;
 }
 .work-history h4 {
   font-size: 1.6rem;
