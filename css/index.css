@@ -134,3 +134,12 @@ html,
 body {
   height: 100%;
 }
+.top {
+  background-color: lightgray;
+}
+.main {
+  background-color: white;
+}
+.work-history {
+  background-color: teal;
+}
