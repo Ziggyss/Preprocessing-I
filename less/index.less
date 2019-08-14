@@ -55,7 +55,7 @@ table {
 
 html, body {
 	height: 100%;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: @fontFamily;
 }
 
 @headerColour: LavenderBlush;
@@ -64,9 +64,11 @@ html, body {
 @topHeight: 200px;
 @mainHeight: 450px;
 @bottomHeight: 550px;
-@mainWidth: 800px;
+@mainWidth: 80%;
 @desktopRootFontSize: 100%;
 @mobileFontSize: 150%;
+@mobileWidth: 500px;
+@fontFamily: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 .navFlex() {
 	display: flex;
@@ -78,6 +80,15 @@ html, body {
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
+}
+
+.mobileFlex() {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+
 }
 
 
@@ -103,7 +114,11 @@ html, body {
 			 color: teal;
 			 padding-left: 2rem;
 			 padding-right: 1rem;
-			 }
+		 		 
+		 @media(max-width: @mobileWidth){
+			 .mobileFlex();
+			
+		}	 
 
 	}
 }
