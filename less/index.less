@@ -55,6 +55,7 @@ table {
 
 html, body {
 	height: 100%;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 @headerColour: lightgray;
@@ -64,11 +65,15 @@ html, body {
 @mainHeight: 450px;
 @bottomHeight: 550px;
 @mainWidth: 800px;
+@desktopRootFontSize: 100%
+@mobileFontSize: 150%
+
 .flexDefault() {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
+
 
 .container {
 	width: @mainWidth;
@@ -79,9 +84,15 @@ html, body {
 	height: @topHeight;
 	display: flex;
 	flex-direction: column;
+	align-items: space-between;
+
 	.navbar {
 		.flexDefault();
+		text-decoration: none;
 	}
+}
+.name h4 {
+	font-size: 2rem;
 }
 
 .main {
