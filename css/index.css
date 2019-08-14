@@ -134,7 +134,7 @@ html,
 body {
   height: 100%;
 }
-.top {
+@flex Default().top {
   background-color: lightgray;
 }
 .main {
