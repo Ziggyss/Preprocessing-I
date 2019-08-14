@@ -134,12 +134,22 @@ html,
 body {
   height: 100%;
 }
-@flex Default().top {
+.top {
   background-color: lightgray;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.top .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .main {
   background-color: white;
+  height: 450px;
 }
 .work-history {
   background-color: teal;
+  height: 550px;
 }

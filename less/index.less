@@ -60,20 +60,32 @@ html, body {
 @headerColour: lightgray;
 @mainColour: white;
 @workHistoryColour: teal;
-@flexDefault() {
+@topHeight: 200px;
+@mainHeight: 450px;
+@bottomHeight: 550px;
+.flexDefault() {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
 
+
 .top {
 	background-color: @headerColour;
+	height: @topHeight;
+	display: flex;
+	flex-direction: column;
+	.navbar {
+		.flexDefault();
+	}
 }
 
 .main {
 	background-color: @mainColour;
+	height: @mainHeight;
 }
 
 .work-history {
 	background-color: @workHistoryColour;
+	height: @bottomHeight;
 }
